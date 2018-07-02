@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza</title>
+</head>
+<body>
+	<header>
+		<h1>Best pizza ever</h1>
+		<h3>Come and get some pizza hommie.</h3>
+	</header>
+	<main>
+		<section id="contact-form">
+			<h2>Place Order</h2>
+			<form method="POST" action="place-order.php">
+				<h2>Delivery Method</h2><br />
+				<input type="radio" name="Deliverymethod" value="Delivery" />Delivery<br />
+				<input type="radio" name="Deliverymethod" value="pickup" />Pickup<br />
+				<h2>Address</h2>
+				<input name="address1" placeholder="Address line 1" class="lg-input" /><br />
+				<input name="address2" placeholder="Address line 2" class ="lg-input" /><br />
+
+				<input name="city" placeholder="City" class="sm-input"/>
+				<input name ="state" placeholder="State" class = "sm-input" /><br />
+				<input name="zip" placeholder="Zip code" class="sm-input" />
+				<br />
+				<br />
+			    <h4>Size  Price</h4>
+			    <select name="Size">
+			    	<option value="12">12" - $13.99</option>
+			    	<option value="16">16" - $16.99</option>
+			    	<option value="18">18" - $19.99</option>
+			    	<option value="72">72" - $149.99</option>
+			    </select>
+			    <br /> <br />
+				<h4>Ingredients</h4>
+				<input type="checkbox" name="Ingredients"  value="Pepperoni" />Pepperoni<br />
+				<input type="checkbox" name="Ingredients" value="Salami" />Salami<br />
+				<input type="checkbox" name="Ingredients" value="Garlic" />Garlic<br />
+				<br />
+				<button type="submit">Place Order</button>
+			</form>
+		</section>
+		<footer>
+			<center>&copy;2017<br />
+			   <a href="#">Terms of Service</a>
+			</center>
+		</footer>
+	</main>
+
+</body>
+</html>
